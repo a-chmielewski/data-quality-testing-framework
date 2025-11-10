@@ -1,0 +1,10 @@
+# This is an intentionally empty workflow file to serve as a placeholder.
+name: placeholder
+on:
+  workflow_dispatch:
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Placeholder job"
+
