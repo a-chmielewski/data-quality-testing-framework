@@ -84,7 +84,7 @@ dbt_packages/
 docker-compose*
 .docker/
 **/.docker/
-**/Dockerfile
+# **/Dockerfile
 **/docker-compose.yml
 **/docker-compose.yaml
 

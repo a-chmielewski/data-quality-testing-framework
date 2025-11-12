@@ -1,0 +1,1613 @@
+[0m09:15:23.024557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A67DB3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A67F8140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A67F9E80>]}
+
+
+============================== 09:15:23.027557 | 78eac70e-3fea-4aae-9e60-2e55571b356c ==============================
+[0m09:15:23.027557 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:15:23.027557 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'F:\\Portfolio\\Data Engineering\\data-quality-testing-framework\\dbt\\logs', 'profiles_dir': 'F:\\Portfolio\\Data Engineering\\data-quality-testing-framework\\dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:15:23.197247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78eac70e-3fea-4aae-9e60-2e55571b356c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A6E1E030>]}
+[0m09:15:23.250760 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:15:23.251761 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:15:23.252761 [debug] [MainThread]: Command `dbt deps` succeeded at 09:15:23.252761 after 0.30 seconds
+[0m09:15:23.252761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A6EBA6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A6CA3E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A67DB3E0>]}
+[0m09:15:23.252761 [debug] [MainThread]: Flushing usage events
+[0m09:15:50.102503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2D379D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2D00C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2D00C740>]}
+
+
+============================== 09:15:50.105503 | 381772ed-f26c-400b-af24-cac4aea4c8ec ==============================
+[0m09:15:50.105503 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:15:50.106504 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'F:\\Portfolio\\Data Engineering\\data-quality-testing-framework\\dbt\\logs', 'profiles_dir': '.', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt build --profiles-dir .', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:15:50.303655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '381772ed-f26c-400b-af24-cac4aea4c8ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2D8C1970>]}
+[0m09:15:50.339084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '381772ed-f26c-400b-af24-cac4aea4c8ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2D9FAE10>]}
+[0m09:15:50.341084 [info ] [MainThread]: Registered adapter: duckdb=1.8.2
+[0m09:15:50.497574 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m09:15:50.498572 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:15:50.498572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '381772ed-f26c-400b-af24-cac4aea4c8ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2AEA6D80>]}
+[0m09:15:51.119358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '381772ed-f26c-400b-af24-cac4aea4c8ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2EC34110>]}
+[0m09:15:51.185572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '381772ed-f26c-400b-af24-cac4aea4c8ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2EE42B40>]}
+[0m09:15:51.185572 [info ] [MainThread]: Found 2 models, 421 macros
+[0m09:15:51.188236 [info ] [MainThread]: 
+[0m09:15:51.188236 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:15:51.191240 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:15:51.192240 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:15:51.350318 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:15:51.350318 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:15:51.350318 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:15:51.351531 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:15:51.351531 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:15:51.351531 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:15:51.358531 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m09:15:51.358531 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m09:15:51.359531 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:15:51.360530 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:15:51.362723 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_marts)
+[0m09:15:51.362723 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_staging)
+[0m09:15:51.363726 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_marts"
+"
+[0m09:15:51.363726 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_staging"
+"
+[0m09:15:51.368256 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:15:51.369259 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:15:51.370767 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:15:51.370767 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:15:51.371772 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:15:51.371772 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:15:51.376773 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:15:51.376773 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:15:51.377774 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:15:51.378775 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:15:51.378775 [debug] [ThreadPool]: On create_nyc_main_marts: BEGIN
+[0m09:15:51.378775 [debug] [ThreadPool]: On create_nyc_main_staging: BEGIN
+[0m09:15:51.379775 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:15:51.380340 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:15:51.380848 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:15:51.380848 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:15:51.380848 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+    
+        create schema if not exists "nyc"."main_marts"
+    
+[0m09:15:51.381854 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+    
+        create schema if not exists "nyc"."main_staging"
+    
+[0m09:15:51.381854 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:15:51.381854 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:15:51.382853 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:15:51.383852 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:15:51.383852 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:15:51.384854 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:15:51.384854 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:15:51.384854 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:15:51.386852 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m09:15:51.386852 [debug] [ThreadPool]: On create_nyc_main_marts: Close
+[0m09:15:51.387851 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m09:15:51.387851 [debug] [ThreadPool]: On create_nyc_main_staging: Close
+[0m09:15:51.393763 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_marts'
+[0m09:15:51.394762 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_staging'
+[0m09:15:51.398317 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:15:51.399316 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:15:51.400318 [debug] [ThreadPool]: On list_nyc_main_marts: BEGIN
+[0m09:15:51.400318 [debug] [ThreadPool]: On list_nyc_main_staging: BEGIN
+[0m09:15:51.400318 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:15:51.400318 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:15:51.411910 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m09:15:51.411910 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m09:15:51.411910 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:15:51.412916 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:15:51.412916 [debug] [ThreadPool]: On list_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_marts"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_marts'
+    and table_catalog = 'nyc'
+  
+[0m09:15:51.412916 [debug] [ThreadPool]: On list_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_staging"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_staging'
+    and table_catalog = 'nyc'
+  
+[0m09:15:51.432597 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m09:15:51.432597 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m09:15:51.433109 [debug] [ThreadPool]: On list_nyc_main_marts: ROLLBACK
+[0m09:15:51.434114 [debug] [ThreadPool]: On list_nyc_main_staging: ROLLBACK
+[0m09:15:51.435115 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_marts'
+[0m09:15:51.436116 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_staging'
+[0m09:15:51.436116 [debug] [ThreadPool]: On list_nyc_main_marts: Close
+[0m09:15:51.436116 [debug] [ThreadPool]: On list_nyc_main_staging: Close
+[0m09:15:51.439114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '381772ed-f26c-400b-af24-cac4aea4c8ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2B31FE90>]}
+[0m09:15:51.439114 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:15:51.440113 [debug] [MainThread]: On master: BEGIN
+[0m09:15:51.440113 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:15:51.445075 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m09:15:51.445075 [debug] [MainThread]: On master: COMMIT
+[0m09:15:51.446075 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:15:51.446075 [debug] [MainThread]: On master: COMMIT
+[0m09:15:51.446075 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:15:51.447075 [debug] [MainThread]: On master: Close
+[0m09:15:51.448077 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:15:51.449075 [info ] [MainThread]: 
+[0m09:15:51.451074 [debug] [Thread-1 (]: Began running node model.gx_demo.stg_311
+[0m09:15:51.451074 [info ] [Thread-1 (]: 1 of 2 START sql view model main_staging.stg_311 ............................... [RUN]
+[0m09:15:51.452079 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.gx_demo.stg_311'
+[0m09:15:51.452079 [debug] [Thread-1 (]: Began compiling node model.gx_demo.stg_311
+[0m09:15:51.457669 [debug] [Thread-1 (]: Writing injected SQL for node "model.gx_demo.stg_311"
+[0m09:15:51.458674 [debug] [Thread-1 (]: Began executing node model.gx_demo.stg_311
+[0m09:15:51.506925 [debug] [Thread-1 (]: Writing runtime sql for node "model.gx_demo.stg_311"
+[0m09:15:51.507922 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:15:51.507922 [debug] [Thread-1 (]: On model.gx_demo.stg_311: BEGIN
+[0m09:15:51.508923 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:15:51.512924 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m09:15:51.514431 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:15:51.514431 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+
+  
+  create view "nyc"."main_staging"."stg_311__dbt_tmp" as (
+    with src as (
+  select *
+  from raw.nyc311_recent
+),
+typed as (
+  select
+    cast(unique_key as varchar) as unique_key,
+    try_cast(created_date as timestamp) as created_ts,
+    try_cast(closed_date as timestamp) as closed_ts,
+    agency,
+    complaint_type,
+    descriptor,
+    city,
+    borough,
+    try_cast(latitude as double) as latitude,
+    try_cast(longitude as double) as longitude
+  from src
+),
+dedup as (
+  select *
+  from (
+    select *,
+      row_number() over (partition by unique_key order by created_ts desc) as rn
+    from typed
+  ) t
+  where rn = 1
+)
+select * exclude (rn) from dedup;
+  );
+
+[0m09:15:51.515772 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+
+  
+  create view "nyc"."main_staging"."stg_311__dbt_tmp" as (
+    with src as (
+  select *
+  from raw.nyc311_recent
+),
+typed as (
+  select
+    cast(unique_key as varchar) as unique_key,
+    try_cast(created_date as timestamp) as created_ts,
+    try_cast(closed_date as timestamp) as closed_ts,
+    agency,
+    complaint_type,
+    descriptor,
+    city,
+    borough,
+    try_cast(latitude as double) as latitude,
+    try_cast(longitude as double) as longitude
+  from src
+),
+dedup as (
+  select *
+  from (
+    select *,
+      row_number() over (partition by unique_key order by created_ts desc) as rn
+    from typed
+  ) t
+  where rn = 1
+)
+select * exclude (rn) from dedup;
+  );
+
+[0m09:15:51.515772 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m09:15:51.516778 [debug] [Thread-1 (]: On model.gx_demo.stg_311: ROLLBACK
+[0m09:15:51.522867 [debug] [Thread-1 (]: Failed to rollback 'model.gx_demo.stg_311'
+[0m09:15:51.522867 [debug] [Thread-1 (]: On model.gx_demo.stg_311: Close
+[0m09:15:51.525371 [debug] [Thread-1 (]: Runtime Error in model stg_311 (models\staging\stg_311.sql)
+  Parser Error: syntax error at or near ";"
+[0m09:15:51.526376 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '381772ed-f26c-400b-af24-cac4aea4c8ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2CF9AC00>]}
+[0m09:15:51.526376 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model main_staging.stg_311 ...................... [[31mERROR[0m in 0.07s]
+[0m09:15:51.527377 [debug] [Thread-1 (]: Finished running node model.gx_demo.stg_311
+[0m09:15:51.528376 [debug] [Thread-3 (]: Began running node model.gx_demo.fct_311_complaints
+[0m09:15:51.528376 [info ] [Thread-3 (]: 2 of 2 SKIP relation main_marts.fct_311_complaints ............................. [[33mSKIP[0m]
+[0m09:15:51.529376 [debug] [Thread-3 (]: Finished running node model.gx_demo.fct_311_complaints
+[0m09:15:51.530376 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:15:51.530376 [debug] [MainThread]: On master: BEGIN
+[0m09:15:51.530376 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:15:51.535403 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m09:15:51.535403 [debug] [MainThread]: On master: COMMIT
+[0m09:15:51.536411 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:15:51.536411 [debug] [MainThread]: On master: COMMIT
+[0m09:15:51.536411 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:15:51.537408 [debug] [MainThread]: On master: Close
+[0m09:15:51.538408 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:15:51.539411 [debug] [MainThread]: Connection 'create_nyc_main_marts' was properly closed.
+[0m09:15:51.539411 [debug] [MainThread]: Connection 'create_nyc_main_staging' was properly closed.
+[0m09:15:51.539411 [debug] [MainThread]: Connection 'list_nyc_main_marts' was properly closed.
+[0m09:15:51.540411 [debug] [MainThread]: Connection 'list_nyc_main_staging' was properly closed.
+[0m09:15:51.540411 [debug] [MainThread]: Connection 'model.gx_demo.stg_311' was properly closed.
+[0m09:15:51.540411 [info ] [MainThread]: 
+[0m09:15:51.541411 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.35 seconds (0.35s).
+[0m09:15:51.542408 [debug] [MainThread]: Command end result
+[0m09:15:51.559579 [info ] [MainThread]: 
+[0m09:15:51.559579 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m09:15:51.560580 [info ] [MainThread]: 
+[0m09:15:51.561580 [error] [MainThread]:   Runtime Error in model stg_311 (models\staging\stg_311.sql)
+  Parser Error: syntax error at or near ";"
+[0m09:15:51.561580 [info ] [MainThread]: 
+[0m09:15:51.561580 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m09:15:51.563580 [debug] [MainThread]: Command `dbt build` failed at 09:15:51.562578 after 1.53 seconds
+[0m09:15:51.563580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2D379D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2ECC2030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A2ECC0E60>]}
+[0m09:15:51.563580 [debug] [MainThread]: Flushing usage events
+[0m09:16:42.468834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020521D557C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020521F1B140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020521FC50D0>]}
+
+
+============================== 09:16:42.472884 | b7aff899-9a59-46f7-8f13-9ab8c1b7c894 ==============================
+[0m09:16:42.472884 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:16:42.472884 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'F:\\Portfolio\\Data Engineering\\data-quality-testing-framework\\dbt\\logs', 'fail_fast': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt build --profiles-dir .', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:16:42.674038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b7aff899-9a59-46f7-8f13-9ab8c1b7c894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020522E3DFD0>]}
+[0m09:16:42.712465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b7aff899-9a59-46f7-8f13-9ab8c1b7c894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020521D76240>]}
+[0m09:16:42.713463 [info ] [MainThread]: Registered adapter: duckdb=1.8.2
+[0m09:16:42.873173 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m09:16:42.994923 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:16:42.995928 [debug] [MainThread]: Partial parsing: updated file: gx_demo://models\staging\stg_311.sql
+[0m09:16:43.147936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b7aff899-9a59-46f7-8f13-9ab8c1b7c894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020523EE7B30>]}
+[0m09:16:43.213320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b7aff899-9a59-46f7-8f13-9ab8c1b7c894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002052460A570>]}
+[0m09:16:43.213320 [info ] [MainThread]: Found 2 models, 421 macros
+[0m09:16:43.215321 [info ] [MainThread]: 
+[0m09:16:43.215321 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:16:43.219320 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:16:43.219320 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:16:43.375322 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:16:43.376323 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:16:43.376323 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:16:43.377325 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:16:43.377325 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:43.377325 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:43.384678 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m09:16:43.385199 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m09:16:43.386205 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:16:43.387205 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:16:43.388710 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_marts)
+[0m09:16:43.388710 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_staging)
+[0m09:16:43.389717 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_marts"
+"
+[0m09:16:43.390265 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_staging"
+"
+[0m09:16:43.395271 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:16:43.397273 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:16:43.397273 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:16:43.397273 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:16:43.397273 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:16:43.397273 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:16:43.403785 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m09:16:43.403785 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m09:16:43.404785 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:16:43.406327 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:16:43.406327 [debug] [ThreadPool]: On create_nyc_main_marts: BEGIN
+[0m09:16:43.406839 [debug] [ThreadPool]: On create_nyc_main_staging: BEGIN
+[0m09:16:43.406839 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:16:43.406839 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:16:43.407846 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:16:43.407846 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:16:43.407846 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+    
+        create schema if not exists "nyc"."main_marts"
+    
+[0m09:16:43.408845 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+    
+        create schema if not exists "nyc"."main_staging"
+    
+[0m09:16:43.408845 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:16:43.410041 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:16:43.410041 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:16:43.411041 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:16:43.411041 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:16:43.412041 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:16:43.412041 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:16:43.412041 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:16:43.413040 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:16:43.413040 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:16:43.413040 [debug] [ThreadPool]: On create_nyc_main_marts: Close
+[0m09:16:43.414039 [debug] [ThreadPool]: On create_nyc_main_staging: Close
+[0m09:16:43.416039 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_marts'
+[0m09:16:43.416039 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_staging'
+[0m09:16:43.419546 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:16:43.421548 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:16:43.422094 [debug] [ThreadPool]: On list_nyc_main_marts: BEGIN
+[0m09:16:43.422094 [debug] [ThreadPool]: On list_nyc_main_staging: BEGIN
+[0m09:16:43.422094 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:43.423099 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:43.428100 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:16:43.428100 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:16:43.428100 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:16:43.429102 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:16:43.429102 [debug] [ThreadPool]: On list_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_marts"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_marts'
+    and table_catalog = 'nyc'
+  
+[0m09:16:43.429102 [debug] [ThreadPool]: On list_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_staging"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_staging'
+    and table_catalog = 'nyc'
+  
+[0m09:16:43.447918 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m09:16:43.448438 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m09:16:43.448963 [debug] [ThreadPool]: On list_nyc_main_staging: ROLLBACK
+[0m09:16:43.449997 [debug] [ThreadPool]: On list_nyc_main_marts: ROLLBACK
+[0m09:16:43.451037 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_staging'
+[0m09:16:43.452079 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_marts'
+[0m09:16:43.452079 [debug] [ThreadPool]: On list_nyc_main_staging: Close
+[0m09:16:43.452606 [debug] [ThreadPool]: On list_nyc_main_marts: Close
+[0m09:16:43.454735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b7aff899-9a59-46f7-8f13-9ab8c1b7c894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020524692D20>]}
+[0m09:16:43.455247 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:16:43.455756 [debug] [MainThread]: On master: BEGIN
+[0m09:16:43.456264 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:16:43.460337 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m09:16:43.461341 [debug] [MainThread]: On master: COMMIT
+[0m09:16:43.461341 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:16:43.461341 [debug] [MainThread]: On master: COMMIT
+[0m09:16:43.462341 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:16:43.462341 [debug] [MainThread]: On master: Close
+[0m09:16:43.463341 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:16:43.464341 [info ] [MainThread]: 
+[0m09:16:43.466632 [debug] [Thread-1 (]: Began running node model.gx_demo.stg_311
+[0m09:16:43.466632 [info ] [Thread-1 (]: 1 of 2 START sql view model main_staging.stg_311 ............................... [RUN]
+[0m09:16:43.467641 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.gx_demo.stg_311'
+[0m09:16:43.467641 [debug] [Thread-1 (]: Began compiling node model.gx_demo.stg_311
+[0m09:16:43.472232 [debug] [Thread-1 (]: Writing injected SQL for node "model.gx_demo.stg_311"
+[0m09:16:43.473231 [debug] [Thread-1 (]: Began executing node model.gx_demo.stg_311
+[0m09:16:43.493296 [debug] [Thread-1 (]: Writing runtime sql for node "model.gx_demo.stg_311"
+[0m09:16:43.494295 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:16:43.494295 [debug] [Thread-1 (]: On model.gx_demo.stg_311: BEGIN
+[0m09:16:43.495299 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:16:43.499299 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m09:16:43.499299 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:16:43.500803 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+
+  
+  create view "nyc"."main_staging"."stg_311__dbt_tmp" as (
+    with src as (
+  select *
+  from raw.nyc311_recent
+),
+typed as (
+  select
+    cast(unique_key as varchar) as unique_key,
+    try_cast(created_date as timestamp) as created_ts,
+    try_cast(closed_date as timestamp) as closed_ts,
+    agency,
+    complaint_type,
+    descriptor,
+    city,
+    borough,
+    try_cast(latitude as double) as latitude,
+    try_cast(longitude as double) as longitude
+  from src
+),
+dedup as (
+  select *
+  from (
+    select *,
+      row_number() over (partition by unique_key order by created_ts desc) as rn
+    from typed
+  ) t
+  where rn = 1
+)
+select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude
+from dedup
+  );
+
+[0m09:16:43.501354 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:16:43.505500 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:16:43.505500 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+alter view "nyc"."main_staging"."stg_311__dbt_tmp" rename to "stg_311"
+[0m09:16:43.507004 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:16:43.517594 [debug] [Thread-1 (]: On model.gx_demo.stg_311: COMMIT
+[0m09:16:43.517594 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:16:43.518593 [debug] [Thread-1 (]: On model.gx_demo.stg_311: COMMIT
+[0m09:16:43.519591 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:16:43.522101 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:16:43.523101 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+drop view if exists "nyc"."main_staging"."stg_311__dbt_backup" cascade
+[0m09:16:43.523101 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:16:43.525102 [debug] [Thread-1 (]: On model.gx_demo.stg_311: Close
+[0m09:16:43.531132 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b7aff899-9a59-46f7-8f13-9ab8c1b7c894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205204D7800>]}
+[0m09:16:43.532137 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main_staging.stg_311 .......................... [[32mOK[0m in 0.06s]
+[0m09:16:43.532678 [debug] [Thread-1 (]: Finished running node model.gx_demo.stg_311
+[0m09:16:43.532678 [debug] [Thread-3 (]: Began running node model.gx_demo.fct_311_complaints
+[0m09:16:43.533682 [info ] [Thread-3 (]: 2 of 2 START sql view model main_marts.fct_311_complaints ...................... [RUN]
+[0m09:16:43.533682 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.gx_demo.fct_311_complaints'
+[0m09:16:43.534682 [debug] [Thread-3 (]: Began compiling node model.gx_demo.fct_311_complaints
+[0m09:16:43.535682 [debug] [Thread-3 (]: Writing injected SQL for node "model.gx_demo.fct_311_complaints"
+[0m09:16:43.536682 [debug] [Thread-3 (]: Began executing node model.gx_demo.fct_311_complaints
+[0m09:16:43.538682 [debug] [Thread-3 (]: Writing runtime sql for node "model.gx_demo.fct_311_complaints"
+[0m09:16:43.539682 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:16:43.539682 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: BEGIN
+[0m09:16:43.539682 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:16:43.551247 [debug] [Thread-3 (]: SQL status: OK in 0.011 seconds
+[0m09:16:43.552251 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:16:43.552251 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+
+  
+  create view "nyc"."main_marts"."fct_311_complaints__dbt_tmp" as (
+    select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude,
+  case when closed_ts is null then 1 else 0 end as is_open
+from "nyc"."main_staging"."stg_311";
+  );
+
+[0m09:16:43.553250 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+
+  
+  create view "nyc"."main_marts"."fct_311_complaints__dbt_tmp" as (
+    select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude,
+  case when closed_ts is null then 1 else 0 end as is_open
+from "nyc"."main_staging"."stg_311";
+  );
+
+[0m09:16:43.553250 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m09:16:43.554252 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: ROLLBACK
+[0m09:16:43.559251 [debug] [Thread-3 (]: Failed to rollback 'model.gx_demo.fct_311_complaints'
+[0m09:16:43.559251 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: Close
+[0m09:16:43.561756 [debug] [Thread-3 (]: Runtime Error in model fct_311_complaints (models\marts\fct_311_complaints.sql)
+  Parser Error: syntax error at or near ";"
+[0m09:16:43.561756 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b7aff899-9a59-46f7-8f13-9ab8c1b7c894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205249DD610>]}
+[0m09:16:43.562762 [error] [Thread-3 (]: 2 of 2 ERROR creating sql view model main_marts.fct_311_complaints ............. [[31mERROR[0m in 0.03s]
+[0m09:16:43.562762 [debug] [Thread-3 (]: Finished running node model.gx_demo.fct_311_complaints
+[0m09:16:43.564286 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:16:43.564286 [debug] [MainThread]: On master: BEGIN
+[0m09:16:43.565294 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:16:43.570290 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m09:16:43.570290 [debug] [MainThread]: On master: COMMIT
+[0m09:16:43.570290 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:16:43.570290 [debug] [MainThread]: On master: COMMIT
+[0m09:16:43.571793 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:16:43.571793 [debug] [MainThread]: On master: Close
+[0m09:16:43.572800 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:16:43.573797 [debug] [MainThread]: Connection 'create_nyc_main_staging' was properly closed.
+[0m09:16:43.573797 [debug] [MainThread]: Connection 'create_nyc_main_marts' was properly closed.
+[0m09:16:43.573797 [debug] [MainThread]: Connection 'list_nyc_main_marts' was properly closed.
+[0m09:16:43.574796 [debug] [MainThread]: Connection 'list_nyc_main_staging' was properly closed.
+[0m09:16:43.574796 [debug] [MainThread]: Connection 'model.gx_demo.stg_311' was properly closed.
+[0m09:16:43.574796 [debug] [MainThread]: Connection 'model.gx_demo.fct_311_complaints' was properly closed.
+[0m09:16:43.574796 [info ] [MainThread]: 
+[0m09:16:43.575796 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.36 seconds (0.36s).
+[0m09:16:43.576797 [debug] [MainThread]: Command end result
+[0m09:16:43.594360 [info ] [MainThread]: 
+[0m09:16:43.595362 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m09:16:43.595362 [info ] [MainThread]: 
+[0m09:16:43.595915 [error] [MainThread]:   Runtime Error in model fct_311_complaints (models\marts\fct_311_complaints.sql)
+  Parser Error: syntax error at or near ";"
+[0m09:16:43.595915 [info ] [MainThread]: 
+[0m09:16:43.596923 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m09:16:43.596923 [debug] [MainThread]: Command `dbt build` failed at 09:16:43.596923 after 1.20 seconds
+[0m09:16:43.597921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020521D557C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020522C880E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020522C89700>]}
+[0m09:16:43.597921 [debug] [MainThread]: Flushing usage events
+[0m09:17:02.259213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020680507CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206FC82F1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020680507E00>]}
+
+
+============================== 09:17:02.262717 | 4ae54ae3-f952-493e-b0ba-8031d25fcffd ==============================
+[0m09:17:02.262717 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:17:02.262717 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'F:\\Portfolio\\Data Engineering\\data-quality-testing-framework\\dbt\\logs', 'fail_fast': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt build --profiles-dir .', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:17:02.462094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4ae54ae3-f952-493e-b0ba-8031d25fcffd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002068067B8F0>]}
+[0m09:17:02.501303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4ae54ae3-f952-493e-b0ba-8031d25fcffd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206FE0A4560>]}
+[0m09:17:02.502303 [info ] [MainThread]: Registered adapter: duckdb=1.8.2
+[0m09:17:02.655197 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m09:17:02.775511 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:17:02.775511 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:17:02.792235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4ae54ae3-f952-493e-b0ba-8031d25fcffd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002068081A240>]}
+[0m09:17:02.858890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4ae54ae3-f952-493e-b0ba-8031d25fcffd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020681EFC050>]}
+[0m09:17:02.858890 [info ] [MainThread]: Found 2 models, 421 macros
+[0m09:17:02.860891 [info ] [MainThread]: 
+[0m09:17:02.861441 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:17:02.864444 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:17:02.865445 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:17:03.002866 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:17:03.002866 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:17:03.003862 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:17:03.003862 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:17:03.004862 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:03.004862 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:03.011565 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m09:17:03.011565 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m09:17:03.012570 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:17:03.013570 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:17:03.015570 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_marts)
+[0m09:17:03.015570 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_staging)
+[0m09:17:03.016570 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_marts"
+"
+[0m09:17:03.017100 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_staging"
+"
+[0m09:17:03.021608 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:03.022613 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:03.023612 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:17:03.023612 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:17:03.023612 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:17:03.024612 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:17:03.029755 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m09:17:03.029755 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m09:17:03.030755 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:03.032260 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:03.032260 [debug] [ThreadPool]: On create_nyc_main_marts: BEGIN
+[0m09:17:03.032260 [debug] [ThreadPool]: On create_nyc_main_staging: BEGIN
+[0m09:17:03.033266 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:03.033266 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:03.034265 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:03.034265 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:03.034265 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+    
+        create schema if not exists "nyc"."main_marts"
+    
+[0m09:17:03.035266 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+    
+        create schema if not exists "nyc"."main_staging"
+    
+[0m09:17:03.035266 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:03.036264 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:03.036264 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:17:03.037265 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:17:03.037265 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:03.037265 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:03.038265 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:17:03.038265 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:17:03.039264 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:03.039264 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:03.039264 [debug] [ThreadPool]: On create_nyc_main_marts: Close
+[0m09:17:03.040264 [debug] [ThreadPool]: On create_nyc_main_staging: Close
+[0m09:17:03.042264 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_marts'
+[0m09:17:03.042264 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_staging'
+[0m09:17:03.046610 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:17:03.048158 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:17:03.048158 [debug] [ThreadPool]: On list_nyc_main_marts: BEGIN
+[0m09:17:03.048158 [debug] [ThreadPool]: On list_nyc_main_staging: BEGIN
+[0m09:17:03.049162 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:03.049162 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:03.053672 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:03.053672 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:03.054669 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:17:03.054669 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:17:03.054669 [debug] [ThreadPool]: On list_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_marts"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_marts'
+    and table_catalog = 'nyc'
+  
+[0m09:17:03.055669 [debug] [ThreadPool]: On list_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_staging"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_staging'
+    and table_catalog = 'nyc'
+  
+[0m09:17:03.074248 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m09:17:03.075248 [debug] [ThreadPool]: On list_nyc_main_marts: ROLLBACK
+[0m09:17:03.075248 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m09:17:03.077249 [debug] [ThreadPool]: On list_nyc_main_staging: ROLLBACK
+[0m09:17:03.077249 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_marts'
+[0m09:17:03.078248 [debug] [ThreadPool]: On list_nyc_main_marts: Close
+[0m09:17:03.078248 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_staging'
+[0m09:17:03.079806 [debug] [ThreadPool]: On list_nyc_main_staging: Close
+[0m09:17:03.081811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4ae54ae3-f952-493e-b0ba-8031d25fcffd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206818FF770>]}
+[0m09:17:03.081811 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:03.081811 [debug] [MainThread]: On master: BEGIN
+[0m09:17:03.081811 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:17:03.087322 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m09:17:03.087322 [debug] [MainThread]: On master: COMMIT
+[0m09:17:03.088324 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:03.088324 [debug] [MainThread]: On master: COMMIT
+[0m09:17:03.089324 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:17:03.089324 [debug] [MainThread]: On master: Close
+[0m09:17:03.090326 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:17:03.091322 [info ] [MainThread]: 
+[0m09:17:03.093826 [debug] [Thread-1 (]: Began running node model.gx_demo.stg_311
+[0m09:17:03.093826 [info ] [Thread-1 (]: 1 of 2 START sql view model main_staging.stg_311 ............................... [RUN]
+[0m09:17:03.094834 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.gx_demo.stg_311'
+[0m09:17:03.095384 [debug] [Thread-1 (]: Began compiling node model.gx_demo.stg_311
+[0m09:17:03.100389 [debug] [Thread-1 (]: Writing injected SQL for node "model.gx_demo.stg_311"
+[0m09:17:03.100389 [debug] [Thread-1 (]: Began executing node model.gx_demo.stg_311
+[0m09:17:03.121964 [debug] [Thread-1 (]: Writing runtime sql for node "model.gx_demo.stg_311"
+[0m09:17:03.122963 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:03.122963 [debug] [Thread-1 (]: On model.gx_demo.stg_311: BEGIN
+[0m09:17:03.122963 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:17:03.128531 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m09:17:03.128531 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:03.129530 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+
+  
+  create view "nyc"."main_staging"."stg_311__dbt_tmp" as (
+    with src as (
+  select *
+  from raw.nyc311_recent
+),
+typed as (
+  select
+    cast(unique_key as varchar) as unique_key,
+    try_cast(created_date as timestamp) as created_ts,
+    try_cast(closed_date as timestamp) as closed_ts,
+    agency,
+    complaint_type,
+    descriptor,
+    city,
+    borough,
+    try_cast(latitude as double) as latitude,
+    try_cast(longitude as double) as longitude
+  from src
+),
+dedup as (
+  select *
+  from (
+    select *,
+      row_number() over (partition by unique_key order by created_ts desc) as rn
+    from typed
+  ) t
+  where rn = 1
+)
+select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude
+from dedup
+  );
+
+[0m09:17:03.129530 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:17:03.133556 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:03.134559 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+alter view "nyc"."main_staging"."stg_311" rename to "stg_311__dbt_backup"
+[0m09:17:03.134559 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:17:03.136891 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:03.136891 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+alter view "nyc"."main_staging"."stg_311__dbt_tmp" rename to "stg_311"
+[0m09:17:03.137890 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:17:03.148953 [debug] [Thread-1 (]: On model.gx_demo.stg_311: COMMIT
+[0m09:17:03.148953 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:03.148953 [debug] [Thread-1 (]: On model.gx_demo.stg_311: COMMIT
+[0m09:17:03.150953 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:17:03.153954 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:03.153954 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+drop view if exists "nyc"."main_staging"."stg_311__dbt_backup" cascade
+[0m09:17:03.155458 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:17:03.158009 [debug] [Thread-1 (]: On model.gx_demo.stg_311: Close
+[0m09:17:03.164010 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4ae54ae3-f952-493e-b0ba-8031d25fcffd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206FDE5B440>]}
+[0m09:17:03.164010 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main_staging.stg_311 .......................... [[32mOK[0m in 0.07s]
+[0m09:17:03.165513 [debug] [Thread-1 (]: Finished running node model.gx_demo.stg_311
+[0m09:17:03.165513 [debug] [Thread-3 (]: Began running node model.gx_demo.fct_311_complaints
+[0m09:17:03.166521 [info ] [Thread-3 (]: 2 of 2 START sql view model main_marts.fct_311_complaints ...................... [RUN]
+[0m09:17:03.167519 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.gx_demo.fct_311_complaints'
+[0m09:17:03.167519 [debug] [Thread-3 (]: Began compiling node model.gx_demo.fct_311_complaints
+[0m09:17:03.169519 [debug] [Thread-3 (]: Writing injected SQL for node "model.gx_demo.fct_311_complaints"
+[0m09:17:03.169519 [debug] [Thread-3 (]: Began executing node model.gx_demo.fct_311_complaints
+[0m09:17:03.172059 [debug] [Thread-3 (]: Writing runtime sql for node "model.gx_demo.fct_311_complaints"
+[0m09:17:03.173066 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:03.173066 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: BEGIN
+[0m09:17:03.174064 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:17:03.183572 [debug] [Thread-3 (]: SQL status: OK in 0.010 seconds
+[0m09:17:03.184572 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:03.184572 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+
+  
+  create view "nyc"."main_marts"."fct_311_complaints__dbt_tmp" as (
+    select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude,
+  case when closed_ts is null then 1 else 0 end as is_open
+from "nyc"."main_staging"."stg_311";
+  );
+
+[0m09:17:03.184572 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+
+  
+  create view "nyc"."main_marts"."fct_311_complaints__dbt_tmp" as (
+    select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude,
+  case when closed_ts is null then 1 else 0 end as is_open
+from "nyc"."main_staging"."stg_311";
+  );
+
+[0m09:17:03.186076 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m09:17:03.186076 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: ROLLBACK
+[0m09:17:03.191621 [debug] [Thread-3 (]: Failed to rollback 'model.gx_demo.fct_311_complaints'
+[0m09:17:03.191621 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: Close
+[0m09:17:03.194621 [debug] [Thread-3 (]: Runtime Error in model fct_311_complaints (models\marts\fct_311_complaints.sql)
+  Parser Error: syntax error at or near ";"
+[0m09:17:03.194621 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4ae54ae3-f952-493e-b0ba-8031d25fcffd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206F9FD0E60>]}
+[0m09:17:03.194621 [error] [Thread-3 (]: 2 of 2 ERROR creating sql view model main_marts.fct_311_complaints ............. [[31mERROR[0m in 0.03s]
+[0m09:17:03.194621 [debug] [Thread-3 (]: Finished running node model.gx_demo.fct_311_complaints
+[0m09:17:03.197131 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:03.197131 [debug] [MainThread]: On master: BEGIN
+[0m09:17:03.197131 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:17:03.202670 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m09:17:03.202670 [debug] [MainThread]: On master: COMMIT
+[0m09:17:03.203675 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:03.203675 [debug] [MainThread]: On master: COMMIT
+[0m09:17:03.203675 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:17:03.204674 [debug] [MainThread]: On master: Close
+[0m09:17:03.204674 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:17:03.206178 [debug] [MainThread]: Connection 'create_nyc_main_marts' was properly closed.
+[0m09:17:03.206178 [debug] [MainThread]: Connection 'create_nyc_main_staging' was properly closed.
+[0m09:17:03.206178 [debug] [MainThread]: Connection 'list_nyc_main_marts' was properly closed.
+[0m09:17:03.207182 [debug] [MainThread]: Connection 'list_nyc_main_staging' was properly closed.
+[0m09:17:03.207182 [debug] [MainThread]: Connection 'model.gx_demo.stg_311' was properly closed.
+[0m09:17:03.207182 [debug] [MainThread]: Connection 'model.gx_demo.fct_311_complaints' was properly closed.
+[0m09:17:03.208182 [info ] [MainThread]: 
+[0m09:17:03.208182 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.35 seconds (0.35s).
+[0m09:17:03.209184 [debug] [MainThread]: Command end result
+[0m09:17:03.229768 [info ] [MainThread]: 
+[0m09:17:03.229768 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m09:17:03.230772 [info ] [MainThread]: 
+[0m09:17:03.230772 [error] [MainThread]:   Runtime Error in model fct_311_complaints (models\marts\fct_311_complaints.sql)
+  Parser Error: syntax error at or near ";"
+[0m09:17:03.230772 [info ] [MainThread]: 
+[0m09:17:03.231772 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m09:17:03.232772 [debug] [MainThread]: Command `dbt build` failed at 09:17:03.232772 after 1.04 seconds
+[0m09:17:03.233328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206FFB9D730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020680507CE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020680507CB0>]}
+[0m09:17:03.233328 [debug] [MainThread]: Flushing usage events
+[0m09:17:18.657737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023149404050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002314577F3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023149228650>]}
+
+
+============================== 09:17:18.660240 | 0b9bfbcb-c007-46dc-a45b-5136c8383960 ==============================
+[0m09:17:18.660240 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:17:18.660240 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '.', 'log_path': 'F:\\Portfolio\\Data Engineering\\data-quality-testing-framework\\dbt\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt build --profiles-dir .', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:17:18.858304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b9bfbcb-c007-46dc-a45b-5136c8383960', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023149707E60>]}
+[0m09:17:18.894850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b9bfbcb-c007-46dc-a45b-5136c8383960', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231495B0B30>]}
+[0m09:17:18.895851 [info ] [MainThread]: Registered adapter: duckdb=1.8.2
+[0m09:17:19.053423 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m09:17:19.172152 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:17:19.172152 [debug] [MainThread]: Partial parsing: updated file: gx_demo://models\marts\fct_311_complaints.sql
+[0m09:17:19.326643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b9bfbcb-c007-46dc-a45b-5136c8383960', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002314A85FB30>]}
+[0m09:17:19.392484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b9bfbcb-c007-46dc-a45b-5136c8383960', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002314AC2BBF0>]}
+[0m09:17:19.392484 [info ] [MainThread]: Found 2 models, 421 macros
+[0m09:17:19.394994 [info ] [MainThread]: 
+[0m09:17:19.394994 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:17:19.397994 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:17:19.398993 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:17:19.541189 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:17:19.541189 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:17:19.541189 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:17:19.542191 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:17:19.542191 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:19.542191 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:19.549311 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m09:17:19.549311 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m09:17:19.550310 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:17:19.551310 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:17:19.553311 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_marts)
+[0m09:17:19.553311 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_staging)
+[0m09:17:19.553311 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_marts"
+"
+[0m09:17:19.554815 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_staging"
+"
+[0m09:17:19.560332 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:19.561330 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:19.562331 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:17:19.562331 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:17:19.562331 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:17:19.563331 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:17:19.567332 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:19.568333 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:19.568333 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:19.569333 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:19.569333 [debug] [ThreadPool]: On create_nyc_main_marts: BEGIN
+[0m09:17:19.570509 [debug] [ThreadPool]: On create_nyc_main_staging: BEGIN
+[0m09:17:19.570509 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:19.571509 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:19.571509 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:19.571509 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:19.572507 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+    
+        create schema if not exists "nyc"."main_marts"
+    
+[0m09:17:19.572507 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+    
+        create schema if not exists "nyc"."main_staging"
+    
+[0m09:17:19.573507 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:19.573507 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:17:19.574510 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m09:17:19.574510 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:19.575049 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:17:19.575049 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:17:19.576057 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:19.576057 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:19.577055 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:17:19.577055 [debug] [ThreadPool]: On create_nyc_main_marts: Close
+[0m09:17:19.577055 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:19.578053 [debug] [ThreadPool]: On create_nyc_main_staging: Close
+[0m09:17:19.579556 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_marts'
+[0m09:17:19.580561 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_staging'
+[0m09:17:19.583563 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:17:19.585560 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:17:19.585560 [debug] [ThreadPool]: On list_nyc_main_marts: BEGIN
+[0m09:17:19.586563 [debug] [ThreadPool]: On list_nyc_main_staging: BEGIN
+[0m09:17:19.586563 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:19.586563 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:19.591625 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:19.591625 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:19.592628 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:17:19.592628 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:17:19.592628 [debug] [ThreadPool]: On list_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_marts"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_marts'
+    and table_catalog = 'nyc'
+  
+[0m09:17:19.593626 [debug] [ThreadPool]: On list_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_staging"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_staging'
+    and table_catalog = 'nyc'
+  
+[0m09:17:19.612218 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m09:17:19.612218 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m09:17:19.613219 [debug] [ThreadPool]: On list_nyc_main_staging: ROLLBACK
+[0m09:17:19.614221 [debug] [ThreadPool]: On list_nyc_main_marts: ROLLBACK
+[0m09:17:19.615219 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_staging'
+[0m09:17:19.616219 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_marts'
+[0m09:17:19.616219 [debug] [ThreadPool]: On list_nyc_main_staging: Close
+[0m09:17:19.617220 [debug] [ThreadPool]: On list_nyc_main_marts: Close
+[0m09:17:19.619222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b9bfbcb-c007-46dc-a45b-5136c8383960', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023149752090>]}
+[0m09:17:19.619222 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:19.619222 [debug] [MainThread]: On master: BEGIN
+[0m09:17:19.619222 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:17:19.625297 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m09:17:19.625297 [debug] [MainThread]: On master: COMMIT
+[0m09:17:19.626297 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:19.626297 [debug] [MainThread]: On master: COMMIT
+[0m09:17:19.627296 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:17:19.627296 [debug] [MainThread]: On master: Close
+[0m09:17:19.628296 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:17:19.629297 [info ] [MainThread]: 
+[0m09:17:19.631806 [debug] [Thread-1 (]: Began running node model.gx_demo.stg_311
+[0m09:17:19.631806 [info ] [Thread-1 (]: 1 of 2 START sql view model main_staging.stg_311 ............................... [RUN]
+[0m09:17:19.632836 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.gx_demo.stg_311'
+[0m09:17:19.632836 [debug] [Thread-1 (]: Began compiling node model.gx_demo.stg_311
+[0m09:17:19.637393 [debug] [Thread-1 (]: Writing injected SQL for node "model.gx_demo.stg_311"
+[0m09:17:19.638394 [debug] [Thread-1 (]: Began executing node model.gx_demo.stg_311
+[0m09:17:19.658927 [debug] [Thread-1 (]: Writing runtime sql for node "model.gx_demo.stg_311"
+[0m09:17:19.659929 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:19.659929 [debug] [Thread-1 (]: On model.gx_demo.stg_311: BEGIN
+[0m09:17:19.660929 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:17:19.665951 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m09:17:19.666950 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:19.666950 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+
+  
+  create view "nyc"."main_staging"."stg_311__dbt_tmp" as (
+    with src as (
+  select *
+  from raw.nyc311_recent
+),
+typed as (
+  select
+    cast(unique_key as varchar) as unique_key,
+    try_cast(created_date as timestamp) as created_ts,
+    try_cast(closed_date as timestamp) as closed_ts,
+    agency,
+    complaint_type,
+    descriptor,
+    city,
+    borough,
+    try_cast(latitude as double) as latitude,
+    try_cast(longitude as double) as longitude
+  from src
+),
+dedup as (
+  select *
+  from (
+    select *,
+      row_number() over (partition by unique_key order by created_ts desc) as rn
+    from typed
+  ) t
+  where rn = 1
+)
+select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude
+from dedup
+  );
+
+[0m09:17:19.667497 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:17:19.672009 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:19.673018 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+alter view "nyc"."main_staging"."stg_311" rename to "stg_311__dbt_backup"
+[0m09:17:19.673018 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:17:19.675017 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:19.676018 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+alter view "nyc"."main_staging"."stg_311__dbt_tmp" rename to "stg_311"
+[0m09:17:19.676018 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:17:19.689093 [debug] [Thread-1 (]: On model.gx_demo.stg_311: COMMIT
+[0m09:17:19.689093 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:19.689093 [debug] [Thread-1 (]: On model.gx_demo.stg_311: COMMIT
+[0m09:17:19.690093 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:17:19.694600 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:19.694600 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+drop view if exists "nyc"."main_staging"."stg_311__dbt_backup" cascade
+[0m09:17:19.695603 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:17:19.698147 [debug] [Thread-1 (]: On model.gx_demo.stg_311: Close
+[0m09:17:19.703413 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b9bfbcb-c007-46dc-a45b-5136c8383960', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023146DAB5C0>]}
+[0m09:17:19.704418 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main_staging.stg_311 .......................... [[32mOK[0m in 0.07s]
+[0m09:17:19.705417 [debug] [Thread-1 (]: Finished running node model.gx_demo.stg_311
+[0m09:17:19.705417 [debug] [Thread-3 (]: Began running node model.gx_demo.fct_311_complaints
+[0m09:17:19.706418 [info ] [Thread-3 (]: 2 of 2 START sql view model main_marts.fct_311_complaints ...................... [RUN]
+[0m09:17:19.706418 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.gx_demo.fct_311_complaints'
+[0m09:17:19.707418 [debug] [Thread-3 (]: Began compiling node model.gx_demo.fct_311_complaints
+[0m09:17:19.709417 [debug] [Thread-3 (]: Writing injected SQL for node "model.gx_demo.fct_311_complaints"
+[0m09:17:19.710422 [debug] [Thread-3 (]: Began executing node model.gx_demo.fct_311_complaints
+[0m09:17:19.712419 [debug] [Thread-3 (]: Writing runtime sql for node "model.gx_demo.fct_311_complaints"
+[0m09:17:19.713419 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:19.713419 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: BEGIN
+[0m09:17:19.713923 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:17:19.724978 [debug] [Thread-3 (]: SQL status: OK in 0.011 seconds
+[0m09:17:19.724978 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:19.725981 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+
+  
+  create view "nyc"."main_marts"."fct_311_complaints__dbt_tmp" as (
+    select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude,
+  case when closed_ts is null then 1 else 0 end as is_open
+from "nyc"."main_staging"."stg_311"
+  );
+
+[0m09:17:19.726978 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m09:17:19.728978 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:19.728978 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+alter view "nyc"."main_marts"."fct_311_complaints__dbt_tmp" rename to "fct_311_complaints"
+[0m09:17:19.729561 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m09:17:19.730565 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: COMMIT
+[0m09:17:19.731564 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:19.731564 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: COMMIT
+[0m09:17:19.732564 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m09:17:19.735078 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:19.735078 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+drop view if exists "nyc"."main_marts"."fct_311_complaints__dbt_backup" cascade
+[0m09:17:19.735078 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m09:17:19.736078 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: Close
+[0m09:17:19.741079 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b9bfbcb-c007-46dc-a45b-5136c8383960', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002314AB0D0A0>]}
+[0m09:17:19.742583 [info ] [Thread-3 (]: 2 of 2 OK created sql view model main_marts.fct_311_complaints ................. [[32mOK[0m in 0.03s]
+[0m09:17:19.742583 [debug] [Thread-3 (]: Finished running node model.gx_demo.fct_311_complaints
+[0m09:17:19.743590 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:19.744663 [debug] [MainThread]: On master: BEGIN
+[0m09:17:19.744663 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:17:19.753215 [debug] [MainThread]: SQL status: OK in 0.009 seconds
+[0m09:17:19.753215 [debug] [MainThread]: On master: COMMIT
+[0m09:17:19.753215 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:19.754719 [debug] [MainThread]: On master: COMMIT
+[0m09:17:19.754719 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:17:19.755359 [debug] [MainThread]: On master: Close
+[0m09:17:19.756363 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:17:19.757365 [debug] [MainThread]: Connection 'create_nyc_main_marts' was properly closed.
+[0m09:17:19.757365 [debug] [MainThread]: Connection 'create_nyc_main_staging' was properly closed.
+[0m09:17:19.757365 [debug] [MainThread]: Connection 'list_nyc_main_marts' was properly closed.
+[0m09:17:19.757365 [debug] [MainThread]: Connection 'list_nyc_main_staging' was properly closed.
+[0m09:17:19.758364 [debug] [MainThread]: Connection 'model.gx_demo.stg_311' was properly closed.
+[0m09:17:19.758364 [debug] [MainThread]: Connection 'model.gx_demo.fct_311_complaints' was properly closed.
+[0m09:17:19.759363 [info ] [MainThread]: 
+[0m09:17:19.759363 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.36 seconds (0.36s).
+[0m09:17:19.760942 [debug] [MainThread]: Command end result
+[0m09:17:19.779219 [info ] [MainThread]: 
+[0m09:17:19.780219 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:17:19.780219 [info ] [MainThread]: 
+[0m09:17:19.780219 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m09:17:19.781218 [debug] [MainThread]: Command `dbt build` succeeded at 09:17:19.781218 after 1.20 seconds
+[0m09:17:19.782218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002314577F3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002314922ADE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023149228650>]}
+[0m09:17:19.782218 [debug] [MainThread]: Flushing usage events
+[0m09:17:37.277989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A79C7DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A79C7D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A79C7C80>]}
+
+
+============================== 09:17:37.279994 | d520950e-7606-4419-8420-eede6c9fe682 ==============================
+[0m09:17:37.279994 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:17:37.280995 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'F:\\Portfolio\\Data Engineering\\data-quality-testing-framework\\dbt\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt build --profiles-dir .', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:17:37.475657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd520950e-7606-4419-8420-eede6c9fe682', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A7B90770>]}
+[0m09:17:37.511475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd520950e-7606-4419-8420-eede6c9fe682', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A7146D50>]}
+[0m09:17:37.512473 [info ] [MainThread]: Registered adapter: duckdb=1.8.2
+[0m09:17:37.671407 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m09:17:37.792581 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:17:37.792581 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:17:37.811104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd520950e-7606-4419-8420-eede6c9fe682', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A8D978C0>]}
+[0m09:17:37.876007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd520950e-7606-4419-8420-eede6c9fe682', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A903DFD0>]}
+[0m09:17:37.876007 [info ] [MainThread]: Found 2 models, 421 macros
+[0m09:17:37.878010 [info ] [MainThread]: 
+[0m09:17:37.878550 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:17:37.881554 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:17:37.881554 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc'
+[0m09:17:38.020076 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:17:38.020622 [debug] [ThreadPool]: Using duckdb connection "list_nyc"
+[0m09:17:38.020622 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:17:38.020622 [debug] [ThreadPool]: On list_nyc: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc"'
+    
+  
+  
+[0m09:17:38.021629 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:38.021629 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:38.028140 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m09:17:38.028140 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m09:17:38.029142 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:17:38.030142 [debug] [ThreadPool]: On list_nyc: Close
+[0m09:17:38.032138 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_marts)
+[0m09:17:38.032138 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc, now create_nyc_main_staging)
+[0m09:17:38.032138 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_marts"
+"
+[0m09:17:38.033141 [debug] [ThreadPool]: Creating schema "database: "nyc"
+schema: "main_staging"
+"
+[0m09:17:38.038164 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:38.039164 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:38.039164 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:17:38.040161 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='nyc'
+        and type='sqlite'
+    
+  
+[0m09:17:38.040161 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:17:38.040161 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:17:38.044668 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:38.046179 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:38.047188 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:38.047188 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:38.048186 [debug] [ThreadPool]: On create_nyc_main_marts: BEGIN
+[0m09:17:38.048186 [debug] [ThreadPool]: On create_nyc_main_staging: BEGIN
+[0m09:17:38.048186 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:38.049188 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:38.049188 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:38.050185 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:38.050185 [debug] [ThreadPool]: On create_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_marts"} */
+
+    
+    
+        create schema if not exists "nyc"."main_marts"
+    
+[0m09:17:38.050185 [debug] [ThreadPool]: On create_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "create_nyc_main_staging"} */
+
+    
+    
+        create schema if not exists "nyc"."main_staging"
+    
+[0m09:17:38.051186 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:38.051730 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:38.051730 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:17:38.052737 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:17:38.052737 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_marts"
+[0m09:17:38.053738 [debug] [ThreadPool]: Using duckdb connection "create_nyc_main_staging"
+[0m09:17:38.053738 [debug] [ThreadPool]: On create_nyc_main_marts: COMMIT
+[0m09:17:38.053738 [debug] [ThreadPool]: On create_nyc_main_staging: COMMIT
+[0m09:17:38.054735 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:38.055241 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:17:38.055241 [debug] [ThreadPool]: On create_nyc_main_marts: Close
+[0m09:17:38.055241 [debug] [ThreadPool]: On create_nyc_main_staging: Close
+[0m09:17:38.057253 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_marts'
+[0m09:17:38.058253 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_main_staging'
+[0m09:17:38.061253 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:17:38.062253 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:17:38.063251 [debug] [ThreadPool]: On list_nyc_main_marts: BEGIN
+[0m09:17:38.063251 [debug] [ThreadPool]: On list_nyc_main_staging: BEGIN
+[0m09:17:38.063251 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:38.063251 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:17:38.068273 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:38.069271 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m09:17:38.069271 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_staging"
+[0m09:17:38.069271 [debug] [ThreadPool]: Using duckdb connection "list_nyc_main_marts"
+[0m09:17:38.070274 [debug] [ThreadPool]: On list_nyc_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_staging"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_staging'
+    and table_catalog = 'nyc'
+  
+[0m09:17:38.070274 [debug] [ThreadPool]: On list_nyc_main_marts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "connection_name": "list_nyc_main_marts"} */
+select
+      'nyc' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_marts'
+    and table_catalog = 'nyc'
+  
+[0m09:17:38.088697 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m09:17:38.089698 [debug] [ThreadPool]: On list_nyc_main_marts: ROLLBACK
+[0m09:17:38.089698 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m09:17:38.090702 [debug] [ThreadPool]: On list_nyc_main_staging: ROLLBACK
+[0m09:17:38.091699 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_marts'
+[0m09:17:38.091699 [debug] [ThreadPool]: Failed to rollback 'list_nyc_main_staging'
+[0m09:17:38.092699 [debug] [ThreadPool]: On list_nyc_main_marts: Close
+[0m09:17:38.092699 [debug] [ThreadPool]: On list_nyc_main_staging: Close
+[0m09:17:38.094698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd520950e-7606-4419-8420-eede6c9fe682', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A903C650>]}
+[0m09:17:38.095816 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:38.095816 [debug] [MainThread]: On master: BEGIN
+[0m09:17:38.095816 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:17:38.101325 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m09:17:38.101325 [debug] [MainThread]: On master: COMMIT
+[0m09:17:38.101325 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:38.102325 [debug] [MainThread]: On master: COMMIT
+[0m09:17:38.102325 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:17:38.102325 [debug] [MainThread]: On master: Close
+[0m09:17:38.103326 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:17:38.104832 [info ] [MainThread]: 
+[0m09:17:38.106836 [debug] [Thread-1 (]: Began running node model.gx_demo.stg_311
+[0m09:17:38.106836 [info ] [Thread-1 (]: 1 of 2 START sql view model main_staging.stg_311 ............................... [RUN]
+[0m09:17:38.106836 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.gx_demo.stg_311'
+[0m09:17:38.108339 [debug] [Thread-1 (]: Began compiling node model.gx_demo.stg_311
+[0m09:17:38.113400 [debug] [Thread-1 (]: Writing injected SQL for node "model.gx_demo.stg_311"
+[0m09:17:38.113400 [debug] [Thread-1 (]: Began executing node model.gx_demo.stg_311
+[0m09:17:38.135522 [debug] [Thread-1 (]: Writing runtime sql for node "model.gx_demo.stg_311"
+[0m09:17:38.136524 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:38.136524 [debug] [Thread-1 (]: On model.gx_demo.stg_311: BEGIN
+[0m09:17:38.137521 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:17:38.142033 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m09:17:38.143033 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:38.143033 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+
+  
+  create view "nyc"."main_staging"."stg_311__dbt_tmp" as (
+    with src as (
+  select *
+  from raw.nyc311_recent
+),
+typed as (
+  select
+    cast(unique_key as varchar) as unique_key,
+    try_cast(created_date as timestamp) as created_ts,
+    try_cast(closed_date as timestamp) as closed_ts,
+    agency,
+    complaint_type,
+    descriptor,
+    city,
+    borough,
+    try_cast(latitude as double) as latitude,
+    try_cast(longitude as double) as longitude
+  from src
+),
+dedup as (
+  select *
+  from (
+    select *,
+      row_number() over (partition by unique_key order by created_ts desc) as rn
+    from typed
+  ) t
+  where rn = 1
+)
+select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude
+from dedup
+  );
+
+[0m09:17:38.143033 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:17:38.148090 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:38.148090 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+alter view "nyc"."main_staging"."stg_311" rename to "stg_311__dbt_backup"
+[0m09:17:38.149089 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:17:38.150596 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:38.151599 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+alter view "nyc"."main_staging"."stg_311__dbt_tmp" rename to "stg_311"
+[0m09:17:38.152599 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:17:38.163769 [debug] [Thread-1 (]: On model.gx_demo.stg_311: COMMIT
+[0m09:17:38.163769 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:38.163769 [debug] [Thread-1 (]: On model.gx_demo.stg_311: COMMIT
+[0m09:17:38.165797 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:17:38.167797 [debug] [Thread-1 (]: Using duckdb connection "model.gx_demo.stg_311"
+[0m09:17:38.169304 [debug] [Thread-1 (]: On model.gx_demo.stg_311: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.stg_311"} */
+drop view if exists "nyc"."main_staging"."stg_311__dbt_backup" cascade
+[0m09:17:38.170309 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:17:38.171312 [debug] [Thread-1 (]: On model.gx_demo.stg_311: Close
+[0m09:17:38.177356 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd520950e-7606-4419-8420-eede6c9fe682', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A5387710>]}
+[0m09:17:38.178356 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main_staging.stg_311 .......................... [[32mOK[0m in 0.07s]
+[0m09:17:38.178356 [debug] [Thread-1 (]: Finished running node model.gx_demo.stg_311
+[0m09:17:38.179861 [debug] [Thread-3 (]: Began running node model.gx_demo.fct_311_complaints
+[0m09:17:38.179861 [info ] [Thread-3 (]: 2 of 2 START sql view model main_marts.fct_311_complaints ...................... [RUN]
+[0m09:17:38.180863 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.gx_demo.fct_311_complaints'
+[0m09:17:38.180863 [debug] [Thread-3 (]: Began compiling node model.gx_demo.fct_311_complaints
+[0m09:17:38.182864 [debug] [Thread-3 (]: Writing injected SQL for node "model.gx_demo.fct_311_complaints"
+[0m09:17:38.183911 [debug] [Thread-3 (]: Began executing node model.gx_demo.fct_311_complaints
+[0m09:17:38.186250 [debug] [Thread-3 (]: Writing runtime sql for node "model.gx_demo.fct_311_complaints"
+[0m09:17:38.186250 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:38.187248 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: BEGIN
+[0m09:17:38.187248 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:17:38.196841 [debug] [Thread-3 (]: SQL status: OK in 0.009 seconds
+[0m09:17:38.196841 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:38.197843 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+
+  
+  create view "nyc"."main_marts"."fct_311_complaints__dbt_tmp" as (
+    select
+  unique_key,
+  created_ts,
+  closed_ts,
+  agency,
+  complaint_type,
+  descriptor,
+  city,
+  borough,
+  latitude,
+  longitude,
+  case when closed_ts is null then 1 else 0 end as is_open
+from "nyc"."main_staging"."stg_311"
+  );
+
+[0m09:17:38.198841 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m09:17:38.199843 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:38.200872 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+alter view "nyc"."main_marts"."fct_311_complaints" rename to "fct_311_complaints__dbt_backup"
+[0m09:17:38.200872 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m09:17:38.202870 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:38.203872 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+alter view "nyc"."main_marts"."fct_311_complaints__dbt_tmp" rename to "fct_311_complaints"
+[0m09:17:38.203872 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m09:17:38.204872 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: COMMIT
+[0m09:17:38.205929 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:38.205929 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: COMMIT
+[0m09:17:38.207474 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m09:17:38.209984 [debug] [Thread-3 (]: Using duckdb connection "model.gx_demo.fct_311_complaints"
+[0m09:17:38.209984 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "gx_demo", "target_name": "dev", "node_id": "model.gx_demo.fct_311_complaints"} */
+drop view if exists "nyc"."main_marts"."fct_311_complaints__dbt_backup" cascade
+[0m09:17:38.212121 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m09:17:38.212121 [debug] [Thread-3 (]: On model.gx_demo.fct_311_complaints: Close
+[0m09:17:38.227216 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd520950e-7606-4419-8420-eede6c9fe682', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A9771910>]}
+[0m09:17:38.228215 [info ] [Thread-3 (]: 2 of 2 OK created sql view model main_marts.fct_311_complaints ................. [[32mOK[0m in 0.05s]
+[0m09:17:38.228215 [debug] [Thread-3 (]: Finished running node model.gx_demo.fct_311_complaints
+[0m09:17:38.229215 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:38.230215 [debug] [MainThread]: On master: BEGIN
+[0m09:17:38.230215 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:17:38.240287 [debug] [MainThread]: SQL status: OK in 0.010 seconds
+[0m09:17:38.240287 [debug] [MainThread]: On master: COMMIT
+[0m09:17:38.240287 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:17:38.240287 [debug] [MainThread]: On master: COMMIT
+[0m09:17:38.241292 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:17:38.241292 [debug] [MainThread]: On master: Close
+[0m09:17:38.242294 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:17:38.243294 [debug] [MainThread]: Connection 'create_nyc_main_staging' was properly closed.
+[0m09:17:38.243294 [debug] [MainThread]: Connection 'create_nyc_main_marts' was properly closed.
+[0m09:17:38.243294 [debug] [MainThread]: Connection 'list_nyc_main_marts' was properly closed.
+[0m09:17:38.243294 [debug] [MainThread]: Connection 'list_nyc_main_staging' was properly closed.
+[0m09:17:38.244800 [debug] [MainThread]: Connection 'model.gx_demo.stg_311' was properly closed.
+[0m09:17:38.244800 [debug] [MainThread]: Connection 'model.gx_demo.fct_311_complaints' was properly closed.
+[0m09:17:38.244800 [info ] [MainThread]: 
+[0m09:17:38.245805 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.37 seconds (0.37s).
+[0m09:17:38.246804 [debug] [MainThread]: Command end result
+[0m09:17:38.263906 [info ] [MainThread]: 
+[0m09:17:38.264906 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:17:38.264906 [info ] [MainThread]: 
+[0m09:17:38.266096 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m09:17:38.267095 [debug] [MainThread]: Command `dbt build` succeeded at 09:17:38.267095 after 1.06 seconds
+[0m09:17:38.267095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A3D5F350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A7717C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6A96D8350>]}
+[0m09:17:38.267095 [debug] [MainThread]: Flushing usage events

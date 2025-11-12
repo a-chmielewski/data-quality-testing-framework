@@ -1,10 +1,72 @@
-# This is an intentionally empty workflow file to serve as a placeholder.
-name: placeholder
+name: data-quality
+
 on:
+  push:
+    branches: [ "main" ]
   workflow_dispatch:
+
 jobs:
-  placeholder:
+  run:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
-      - run: echo "Placeholder job"
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch data + load DuckDB
+        run: python scripts/fetch_311.py
+
+      - name: dbt build (DuckDB)
+        run: |
+          cd dbt
+          dbt deps || true
+          dbt build --profiles-dir .
+
+      - name: Setup GX (suites + checkpoint)
+        run: python scripts/setup_gx.py
+
+      - name: Run GX checkpoint
+        run: python scripts/run_checkpoint.py
+
+      - name: Build metrics.json
+        run: python scripts/build_metrics.py
+
+      # Publish GX Data Docs to GitHub Pages
+      - name: Prepare site
+        run: |
+          mkdir -p _site
+          # Copy GX Data Docs (local_site) into _site
+          rsync -av --delete great_expectations/uncommitted/data_docs/local_site/ _site/
+          # Optionally include artifacts (metrics.json)
+          mkdir -p _site/artifacts
+          cp -f artifacts/metrics.json _site/artifacts/metrics.json
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: run
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 

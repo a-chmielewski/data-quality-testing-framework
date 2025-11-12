@@ -1,0 +1,59 @@
+{
+  "rows_recent": 3000,
+  "rows_hist": 3000,
+  "nulls_recent": {
+    "created_date": 0.0,
+    "complaint_type": 0.0,
+    "borough": 0.0
+  },
+  "nulls_hist": {
+    "created_date": 0.0,
+    "complaint_type": 0.0,
+    "borough": 0.0003
+  },
+  "top_complaint_type_recent": [
+    {
+      "value": "HEAT/HOT WATER",
+      "share": 0.3487
+    },
+    {
+      "value": "Illegal Parking",
+      "share": 0.15
+    },
+    {
+      "value": "Noise - Residential",
+      "share": 0.1247
+    },
+    {
+      "value": "Blocked Driveway",
+      "share": 0.054
+    },
+    {
+      "value": "Noise - Street/Sidewalk",
+      "share": 0.0347
+    }
+  ],
+  "top_complaint_type_hist": [
+    {
+      "value": "Request Large Bulky Item Collection",
+      "share": 0.131
+    },
+    {
+      "value": "Illegal Parking",
+      "share": 0.1083
+    },
+    {
+      "value": "HEAT/HOT WATER",
+      "share": 0.099
+    },
+    {
+      "value": "Noise - Residential",
+      "share": 0.0843
+    },
+    {
+      "value": "Blocked Driveway",
+      "share": 0.065
+    }
+  ],
+  "generated_by": "build_metrics.py"
+}

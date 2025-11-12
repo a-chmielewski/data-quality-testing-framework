@@ -1,0 +1,17 @@
+name: "gx_demo"
+version: "1.0.0"
+config-version: 2
+
+profile: "gx_demo"
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  gx_demo:
+    +materialized: view
+    staging:
+      +schema: staging
+    marts:
+      +schema: marts

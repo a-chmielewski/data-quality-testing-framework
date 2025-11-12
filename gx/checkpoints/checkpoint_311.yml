@@ -1,0 +1,40 @@
+name: checkpoint_311
+config_version: 1.0
+template_name:
+module_name: great_expectations.checkpoint
+class_name: Checkpoint
+run_name_template: nyc311__%Y-%m-%dT%H-%M-%S
+expectation_suite_name:
+batch_request: {}
+action_list:
+  - name: store_validation_result
+    action:
+      class_name: StoreValidationResultAction
+  - name: store_evaluation_params
+    action:
+      class_name: StoreEvaluationParametersAction
+  - name: update_data_docs
+    action:
+      class_name: UpdateDataDocsAction
+evaluation_parameters: {}
+runtime_configuration: {}
+validations:
+  - batch_request:
+      datasource_name: nyc311_pandas
+      data_connector_name: default_runtime_data_connector
+      data_asset_name: nyc311_recent
+      runtime_parameters: {}
+      batch_identifiers:
+        default_identifier_name: recent
+    expectation_suite_name: suite_311_recent
+  - batch_request:
+      datasource_name: nyc311_pandas
+      data_connector_name: default_runtime_data_connector
+      data_asset_name: nyc311_hist
+      runtime_parameters: {}
+      batch_identifiers:
+        default_identifier_name: hist
+    expectation_suite_name: suite_311_hist
+profilers: []
+ge_cloud_id:
+expectation_suite_ge_cloud_id:

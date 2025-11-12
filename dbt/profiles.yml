@@ -1,0 +1,7 @@
+gx_demo:
+  outputs:
+    dev:
+      type: duckdb
+      path: ../duckdb/nyc.duckdb
+      threads: 4
+  target: dev
