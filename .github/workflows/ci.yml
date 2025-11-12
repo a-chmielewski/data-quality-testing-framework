@@ -58,6 +58,10 @@ jobs:
           # Optionally include artifacts (metrics.json)
           mkdir -p _site/artifacts
           cp -f artifacts/metrics.json _site/artifacts/metrics.json
+          # Copy custom dashboard into the published site
+          if [ -d "docs" ]; then
+            rsync -av docs/ _site/
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

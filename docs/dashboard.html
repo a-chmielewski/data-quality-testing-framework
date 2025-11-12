@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Quality Dashboard — NYC 311 (GX Demo)</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --muted:#94a3b8; --text:#e5e7eb; }
+    html,body { margin:0; padding:0; background:var(--bg); color:var(--text); font: 15px/1.5 system-ui,Segoe UI,Roboto,Ubuntu; }
+    .wrap { max-width: 1120px; margin: 32px auto; padding: 0 16px; }
+    .hdr { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom: 20px; }
+    .hdr h1 { margin:0; font-size: 22px; letter-spacing:.2px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+    .card { background: var(--card); border-radius: 14px; padding: 16px; }
+    .col-4 { grid-column: span 4; min-width: 260px; }
+    .col-8 { grid-column: span 8; min-width: 320px; }
+    .kpi { display:flex; flex-direction:column; gap:4px; }
+    .kpi .label { font-size:12px; color:var(--muted); }
+    .kpi .value { font-size:20px; font-weight:600; }
+    .tbl { width:100%; border-collapse: collapse; }
+    .tbl th,.tbl td { padding: 8px 10px; border-bottom: 1px solid #1f2937; text-align:left; }
+    .error { background:#7f1d1d; padding:12px 14px; border-radius:10px; }
+    a { color:#93c5fd; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .footer { margin-top: 26px; color:var(--muted); font-size: 13px; }
+    @media (max-width: 900px) {
+      .col-4,.col-8 { grid-column: span 12; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hdr">
+      <h1>NYC 311 — Data Quality Snapshot</h1>
+      <span class="muted">Great Expectations demo • recent vs historical</span>
+    </div>
+
+    <div id="error" class="error" style="display:none;"></div>
+
+    <div class="grid" id="content" style="display:none;">
+      <div class="card col-4">
+        <div class="kpi"><div class="label">Rows (recent)</div><div id="kpi_rows_recent" class="value">—</div></div>
+        <div class="kpi"><div class="label">Rows (historical)</div><div id="kpi_rows_hist" class="value">—</div></div>
+      </div>
+
+      <div class="card col-8">
+        <div id="top_complaints_chart" style="height:380px;"></div>
+      </div>
+
+      <div class="card col-12">
+        <h3 style="margin:0 0 8px 0;">Null ratios (key columns)</h3>
+        <table class="tbl" id="null_table">
+          <thead>
+            <tr><th>Column</th><th>Recent</th><th>Historical</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="footer">
+        Data from NYC Open Data (sampled). Pipeline: fetch → DuckDB/dbt → Great Expectations.  
+        See <a href="./index.html">GX Data Docs</a> for detailed validations.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    async function main() {
+      const errEl = document.getElementById('error');
+      const contentEl = document.getElementById('content');
+
+      // metrics.json is published by your CI to /artifacts/metrics.json
+      const url = new URL(window.location.href);
+      // If you host this file in the site root alongside Data Docs, artifacts lives at /artifacts/metrics.json
+      // If you move this file, adjust the relative path below.
+      const metricsUrl = (url.pathname.endsWith('.html') ? url.pathname.replace(/[^/]+$/, '') : url.pathname) + 'artifacts/metrics.json';
+
+      let data;
+      try {
+        const res = await fetch(metricsUrl, { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        data = await res.json();
+      } catch (e) {
+        errEl.style.display = 'block';
+        errEl.textContent = 'Failed to load metrics (' + e.message + '). Ensure your workflow copies artifacts/metrics.json into the deployed site.';
+        return;
+      }
+
+      // KPIs
+      document.getElementById('kpi_rows_recent').textContent = (data.rows_recent ?? '—').toLocaleString();
+      document.getElementById('kpi_rows_hist').textContent   = (data.rows_hist   ?? '—').toLocaleString();
+
+      // Top complaint types (recent vs hist)
+      function unpackTop(list) {
+        return (list || []).map(d => ({ value: String(d.value), share: Number(d.share) }));
+      }
+      const topRecent = unpackTop(data.top_complaint_type_recent);
+      const topHist   = unpackTop(data.top_complaint_type_hist);
+
+      // Build aligned category list
+      const catSet = new Set([...topRecent.map(d=>d.value), ...topHist.map(d=>d.value)]);
+      const cats = Array.from(catSet);
+      const recentShares = cats.map(c => (topRecent.find(d=>d.value===c)?.share ?? 0));
+      const histShares   = cats.map(c => (topHist.find(d=>d.value===c)?.share ?? 0));
+
+      const traceRecent = { x: cats, y: recentShares, type: 'bar', name: 'Recent' };
+      const traceHist   = { x: cats, y: histShares,   type: 'bar', name: 'Historical' };
+      const layout = {
+        barmode: 'group',
+        title: { text: 'Top complaint types — share of rows' },
+        margin: { t: 40, r: 20, b: 80, l: 40 },
+        xaxis: { tickangle: -20 },
+        yaxis: { tickformat: ',.0%' }
+      };
+      Plotly.newPlot('top_complaints_chart', [traceRecent, traceHist], layout, {displayModeBar:false, responsive:true});
+
+      // Null ratios table
+      const tbody = document.querySelector('#null_table tbody');
+      tbody.innerHTML = '';
+      const recentNulls = data.nulls_recent || {};
+      const histNulls = data.nulls_hist || {};
+      const cols = Array.from(new Set([...Object.keys(recentNulls), ...Object.keys(histNulls)]));
+      cols.forEach(col => {
+        const tr = document.createElement('tr');
+        const tdC = document.createElement('td'); tdC.textContent = col;
+        const tdR = document.createElement('td'); tdR.textContent = (recentNulls[col] ?? 0).toLocaleString(undefined, { style:'percent', minimumFractionDigits: 1 });
+        const tdH = document.createElement('td'); tdH.textContent = (histNulls[col] ?? 0).toLocaleString(undefined, { style:'percent', minimumFractionDigits: 1 });
+        tr.appendChild(tdC); tr.appendChild(tdR); tr.appendChild(tdH);
+        tbody.appendChild(tr);
+      });
+
+      contentEl.style.display = 'grid';
+    }
+    main();
+  </script>
+</body>
+</html>
