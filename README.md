@@ -36,31 +36,31 @@ This project showcases a complete data quality testing framework built around NY
                                                             │
                                                             v
     ┌──────────────────────────────────────────────────────┴──────┐
-    │                                                              │
-    │                    dbt Transformations                       │
-    │                                                              │
-    │  ┌────────────────┐           ┌───────────────────────┐    │
-    │  │  stg_311.sql   │           │ fct_311_complaints.sql│    │
+    │                                                             │
+    │                    dbt Transformations                      │
+    │                                                             │
+    │  ┌────────────────┐           ┌───────────────────────┐     │
+    │  │  stg_311.sql   │           │ fct_311_complaints.sql│     │
     │  │  - Casting     │───────────>│  - Business logic     │    │
-    │  │  - Dedup       │           │  - Computed fields    │    │
-    │  │  - Cleansing   │           │  - Analytics-ready    │    │
-    │  └────────────────┘           └───────────────────────┘    │
-    │                                                              │
-    └──────────────────────────────────────────────────────────────┘
+    │  │  - Dedup       │           │  - Computed fields    │     │
+    │  │  - Cleansing   │           │  - Analytics-ready    │     │
+    │  └────────────────┘           └───────────────────────┘     │
+    │                                                             │
+    └─────────────────────────────────────────────────────────────┘
                                     │
                                     v
     ┌──────────────────────────────────────────────────────────────┐
     │              Great Expectations Validation                   │
     │                                                              │
-    │  ┌─────────────────────┐     ┌─────────────────────┐       │
-    │  │ suite_311_recent    │     │ suite_311_hist      │       │
-    │  │ - Uniqueness        │     │ - Uniqueness        │       │
-    │  │ - Null checks       │     │ - Null checks       │       │
-    │  │ - Row counts        │     │ - Row counts        │       │
-    │  │ - Borough values    │     │ - Borough values    │       │
-    │  └─────────────────────┘     └─────────────────────┘       │
+    │  ┌─────────────────────┐     ┌─────────────────────┐         │
+    │  │ suite_311_recent    │     │ suite_311_hist      │         │
+    │  │ - Uniqueness        │     │ - Uniqueness        │         │
+    │  │ - Null checks       │     │ - Null checks       │         │
+    │  │ - Row counts        │     │ - Row counts        │         │
+    │  │ - Borough values    │     │ - Borough values    │         │
+    │  └─────────────────────┘     └─────────────────────┘         │
     │                                                              │
-    │  checkpoint_311 ──> Store Results ──> Update Data Docs      │
+    │  checkpoint_311 ──> Store Results ──> Update Data Docs       │
     └──────────────────────────────────────────────────────────────┘
                                     │
                 ┌───────────────────┴───────────────────┐
@@ -208,7 +208,7 @@ data-quality-testing-framework/
 ├── artifacts/
 │   └── metrics.json              # Dashboard metrics output
 │
-├── Makefile                       # Pipeline automation
+├── Makefile                      # Pipeline automation
 ├── requirements.txt              # Python dependencies
 └── README.md                     # This file
 ```
