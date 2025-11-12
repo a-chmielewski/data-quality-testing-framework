@@ -42,6 +42,10 @@ validator_hist = ctx.get_validator(
 )
 results_hist = validator_hist.validate()
 
+# Build data docs
+print("\nBuilding data docs...")
+ctx.build_data_docs()
+
 # Check success
 success = results_recent.success and results_hist.success
 print(f"\nValidation complete!")

@@ -49,7 +49,12 @@ jobs:
         run: |
           mkdir -p _site
           # Copy GX Data Docs (local_site) into _site
-          rsync -av --delete great_expectations/uncommitted/data_docs/local_site/ _site/
+          if [ -d "gx/uncommitted/data_docs/local_site" ]; then
+            rsync -av --delete gx/uncommitted/data_docs/local_site/ _site/
+          else
+            echo "No data docs found, creating placeholder"
+            echo "<h1>Data Quality Dashboard</h1><p>No data docs generated yet.</p>" > _site/index.html
+          fi
           # Optionally include artifacts (metrics.json)
           mkdir -p _site/artifacts
           cp -f artifacts/metrics.json _site/artifacts/metrics.json
